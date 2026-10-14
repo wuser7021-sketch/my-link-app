@@ -1,0 +1,154 @@
+:root {
+  --text-satu: "Caacupe One", sans-serif;
+  --text-dua: "Oswald", sans-serif;
+  --text-tiga: "Archivo Black", sans-serif;
+}
+
+.container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border: 3px solid #000;
+  box-shadow: 8px 8px 0px #000;
+  border-radius: 12px;
+  text-align: center;
+}
+body {
+  background-color: #facc15;
+}
+div.box {
+  border: 2px solid #011936;
+  text-align: center;
+}
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #011936;
+  object-fit: cover;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: var(--color-primary);
+}
+p {
+  max-width: 400px;
+  text-align: center;
+  display: inline-block;
+}
+
+.links {
+  border: 1px black;
+}
+
+.links a {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  max-width: 440px;
+  margin: 10px auto;
+  padding: 14px;
+  background-color: white;
+  text-decoration: none;
+  gap: 12px;
+  color: black;
+  box-shadow: 4px 4px 0px black;
+  transition: all 0.4s ease;
+  max-width: 100%;
+  bolder: 2.5px solid #000;
+}
+.links a:hover {
+  /* transform: translate(-2px, -5px); */
+  transform: scale(1.1);
+  /* transform: rotate(1000deg); */
+  box-shadow: 6px 6px 0px black;
+}
+.links a .arrow {
+  margin-left: auto;
+}
+.links a:nth-child(1):hover {
+  background-color: rgb(194, 9, 49);
+}
+.links a:nth-child(2):hover {
+  background-color: rgb(32, 31, 31);
+}
+.links a:nth-child(3):hover {
+  background-color: limegreen;
+}
+.qna-card {
+  max-width: 320px;
+  margin: 24px auto;
+  padding: 18px;
+  background-color: #f3f3f3;
+  border: 2.5px solid #000;
+  box-shadow: 4px 4px 0px #000;
+  text-align: left;
+  max-width: 100%;
+}
+
+.qna-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+}
+
+.qna-card p {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.qna-form {
+  display: flex;
+  gap: 8px;
+}
+
+.qna-form input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #000;
+  font-size: 13px;
+}
+
+.qna-form input :focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.qna-form button {
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: tranform 0.1s ease;
+}
+
+.qna-form button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+  .container {
+    margin: 10px auto;
+    padding: 20px 14px;
+    box-shadow: 5px 5px 0px #000;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .qna-form {
+    flex-direction: column;
+  }
+  .qna-form button {
+    width: 100%;
+  }
+}
